@@ -1,3 +1,6 @@
+# Get sample dataset in .json format
+### I used few from: https://www.yelp.com/dataset
+
 # Install docker
 ### Download and install docker for your OS (I use docker desktop)
 
