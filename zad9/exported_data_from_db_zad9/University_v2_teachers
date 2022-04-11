@@ -1,0 +1,1 @@
+{"_id":{"$oid":"625425fd276fac157e0efb68"},"firstname":"John","lastname":"Doe","university-mail":"JohnDoe@agh.edu.pl","phone":123456789,"gender":"m","actively-teaching":true,"courses":[{"$oid":"625425d5276fac157e0efb66"},{"$oid":"625425d5276fac157e0efb67"}]}

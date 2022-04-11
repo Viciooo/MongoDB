@@ -1,0 +1,167 @@
+db.students.insertMany([
+    {
+        "firstname": "Mike",
+        "lastname": "Tv",
+        "university-mail": "MikeTv@student.agh.edu.pl",
+        "phone": 987654321,
+        "gender": "m",
+        "actively-studing": true,
+        "courses": [
+            {
+                "course_id":"<pass-course-id-here>",
+                "marks": [
+                    {
+                        "name":"quiz-1",
+                        "teacher-comment":"Not to shabby",
+                        "mark": 3
+                    },
+                    {
+                        "name":"big-test-1",
+                        "teacher-comment":"OK",
+                        "mark": 5
+                    }
+                ],
+                "final-mark": 4
+            },
+            {
+                "course_id":"<pass-course-id-here>",
+                "marks": [
+                    {
+                        "name":"quiz-1",
+                        "teacher-comment":"Not to shabby",
+                        "mark": 1
+                    },
+                    {
+                        "name":"big-test-1",
+                        "teacher-comment":"OK",
+                        "mark": 5
+                    }
+                ],
+                "final-mark": 2
+            }]
+    },
+    {
+        "firstname": "Kate",
+        "lastname": "Li",
+        "university-mail": "KateLi@student.agh.edu.pl",
+        "phone": 666666666,
+        "gender": "f",
+        "actively-studing": true,
+        "courses": [
+            {
+                "course_id":"<pass-course-id-here>",
+                "marks": [
+                    {
+                        "name":"quiz-1",
+                        "teacher-comment":"Pretty bad",
+                        "mark": 2
+                    },
+                    {
+                        "name":"big-test-1",
+                        "teacher-comment":"OK",
+                        "mark": 3
+                    }
+                ],
+                "final-mark": 3
+        },
+            {
+            "course_id":"<pass-course-id-here>",
+            "marks": [
+                {
+                    "name":"quiz-1",
+                    "teacher-comment":"Not to shabby",
+                    "mark": 1
+                },
+                {
+                    "name":"big-test-1",
+                    "teacher-comment":"OK",
+                    "mark": 5
+                }
+            ],
+            "final-mark": 2
+        }]
+    },
+    {
+        "firstname": "Tom",
+        "lastname": "Holandt",
+        "university-mail": "TomHolandt@student.agh.edu.pl",
+        "phone": 111111111,
+        "gender": "m",
+        "actively-studing": false,
+        "courses": 
+            [
+               { "course_id":"<pass-course-id-here>",
+                "marks": [
+                {
+                    "name":"quiz-1",
+                    "teacher-comment":"OK",
+                    "mark": 3
+                },
+                {
+                    "name":"big-test-1",
+                    "teacher-comment":"OK",
+                    "mark": 3
+                }
+            ],
+            "final-mark": 3}
+        ]
+    }
+])
+
+db.teachers.insert({
+    "firstname": "John",
+    "lastname": "Doe",
+    "university-mail": "JohnDoe@agh.edu.pl",
+    "phone": 123456789,
+    "gender": "m",
+    "actively-teaching": true,
+    "courses": []
+}
+)
+
+db.courses.insertMany(
+    [{
+        "name":"Mathematics",
+        "ECTS": "4",
+        "course-ratings": [7,2],
+        "enrolled-students": [],
+        "classes": [
+            {
+                "name": "Integrals",
+                "place": "D-17",
+                "duration": 1.5,
+                "date": "2022-04-03T16:00:00Z",
+                "status": "happened",
+                "participants-ids": []  
+            },
+            {
+                "name": "Derivatives",
+                "place": "https://teams.microsoft.com/meeting-code",
+                "duration": 3,
+                "date": "2022-04-10T12:00:00Z",
+                "status": "planned",
+                "participants-ids": []  
+            }
+        ]
+    
+    },
+    {
+        "name":"Physics",
+        "ECTS": "100",
+        "course-ratings": [10,1],
+        "enrolled-students": [],
+        "classes": [
+            {
+                "name": "wHy pHysiCS Is aWEsome",
+                "place": "D-17",
+                "duration": 6,
+                "date": "2021-04-03T16:00:00Z",
+                "status": "canceled",
+                "participants-ids": []  
+            }
+        ]
+    
+    }]
+) 
+
+
